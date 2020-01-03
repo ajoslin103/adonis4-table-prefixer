@@ -2,6 +2,23 @@ Sample usages
 
 // register the provider in your aa/start/app.js file
 
+// add a tablePrefix field into your selected database configuration
+
+  mysql: {
+    client: 'mysql',
+    // prefix: 'my_', // 'prefix' is horribly broken
+    tablePrefix: 'myst_', // see app/providers/TablePrefixer
+    connection: {
+      host: Env.get('DB_HOST', 'localhost'),
+      port: Env.get('DB_PORT', ''),
+      user: Env.get('DB_USER', 'root'),
+      password: Env.get('DB_PASSWORD', ''),
+      database: Env.get('DB_DATABASE', 'adonis')
+    },
+    debug: Env.get('DB_DEBUG', false)
+  },
+
+
 // include the provider in your source file (be it migration, seed, Model, -- any code that uses table names...)
 const TablePrefixer = use('TablePrefixer/Provider');
 
