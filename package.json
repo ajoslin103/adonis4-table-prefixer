@@ -1,0 +1,26 @@
+{
+  "name": "adonis4-table-prefixer",
+  "version": "1.0.0",
+  "description": "This package helps you to use database table prefixes in Adonis v4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajoslin103/adonis4-table-prefixer.git"
+  },
+  "keywords": [
+    "adonis",
+    "prefix",
+    "database",
+    "table",
+    "provider"
+  ],
+  "author": "allen joslin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajoslin103/adonis4-table-prefixer/issues"
+  },
+  "homepage": "https://github.com/ajoslin103/adonis4-table-prefixer#readme"
+}
